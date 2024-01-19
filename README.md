@@ -77,8 +77,8 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 ## Разворачиваю инфраструктуру с помощью Terraform
 
 Редактирую файл main, описываю допуски и добавляю 2 веб-сервера
-![img1](https://github.com/1.png)
-![img2](https://github.com/2.png)
+![img1](/img1.png)
+![img2](/img/2.png)
 
 Генерирую shh ключ и прописываю в meta.yml
 
