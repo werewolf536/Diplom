@@ -78,8 +78,8 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 ## Разворачиваю инфраструктуру с помощью Terraform
 
 Редактирую файл main, описываю допуски и добавляю 2 веб-сервера
-![img1](/img/1.png)
-![img2](/img/2.png)
+
+[main.tf](/main.tf)
 
 Генерирую shh ключ и прописываю в meta.yml
 
@@ -90,7 +90,28 @@ users:
     shell: /bin/bash
     sudo: ['ALL=(ALL) NOPASSWD:ALL']
     ssh-authorized-keys:
-     - ssh-rsa ххххххххх werewolf@UbuntuSSD
+     - ssh-rsa ххххххххх root@Ubuntu11
 ```
-Создаю сеть для всей инфраструктуры
+Создаю сеть и машины
+
+[networks.tf](/networks.tf) - внешняя и внутренняя сеть
+
+[outputs.tf](/outputs.tf) - вывод ip-адресов
+
+[elastic.tf](/elastic.tf) - host-elasticsearch
+
+[bastion.tf](/bastion.tf) - host-bastion
+
+[kibana.tf](/kibana.tf) - host-kibana
+
+[zabbix.tf](/zabbix.tf) - host-zabbix
+
+[security.tf](/security.tf) - группы безопасности
+
+[balancer.tf](/balancer.tf) - таргет и целевая группа 
+
+[snapshot.tf](/snapshot.tf) - snapshot
+
+
+
 
