@@ -157,7 +157,9 @@ ansible-playbook playbook2.yml
 ![11](/img/11.png)
 
 http://84.201.133.190 - Zabbix
+
 Login: Admin
+
 Pass: zabbix
 
 ![12](/img/12.png)
