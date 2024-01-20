@@ -1,0 +1,7 @@
+users:
+  - name: werewolf
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh_authorized_keys:
+      - ssh-rsa XXXXXXXX root@Ubuntu11
